@@ -1,1 +1,49 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+body.light-theme {
+  --text-color: #222;
+  --bkg-color: #fff;
+  --btn-txt-color: white;
+  --btn-bg-color: rgb(11, 88, 160);
+  --border-color: #5e5858;
+  --hover-bg-color: rgba(195, 222, 254, 0.2);
+  --hover-text-color: #454f59;
+  --toolbar-bg-color: #f5f5f5;
+}
+
+body.dark-theme {
+  --text-color: #eee;
+  --bkg-color: #161a1d;
+  --btn-txt-color: rgb(46, 43, 43);
+  --border-color: #5e5858;
+  --hover-bg-color: rgb(44, 51, 58);
+  --btn-bg-color: rgb(20, 211, 195);
+  --hover-text-color: #dee4ea;
+  --toolbar-bg-color: rgb(44, 51, 58);
+  --paginator-bg-color: #626b74;
+}
+
+body {
+  background: var(--bkg-color);
+}
+
+h1,
+p,
+span {
+  color: var(--text-color);
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 2px;
+  color: var(--btn-txt-color);
+  background-color: var(--btn-bg-color);
+}

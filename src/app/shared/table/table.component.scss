@@ -1,0 +1,32 @@
+.avatar {
+  width: 200px;
+  height: 200px;
+}
+
+.table-header,
+.table-body {
+  background-color: var(--bkg-color);
+
+  th,
+  td {
+    color: var(--text-color);
+  }
+}
+
+mat-paginator {
+  background-color: var(--paginator-bg-color);
+}
+
+th,
+td {
+  border-bottom: 1px solid var(--border-color) !important;
+}
+
+.mat-mdc-table .mat-mdc-row:hover {
+  background-color: var(--hover-bg-color);
+  cursor: pointer;
+
+  td {
+    color: var(--hover-text-color);
+  }
+}

@@ -1,0 +1,23 @@
+.containet {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--toolbar-bg-color);
+
+  span {
+    color: var(--text-color);
+    cursor: pointer;
+  }
+
+  .swith-theme-btn {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,56 @@
+<div class="content">
+  <div class="header">
+    <span class="fill-remaining-space">User Information</span>
+
+    <mat-icon *ngIf="!userData.avatar">account_circle</mat-icon>
+    <img class="avatar" *ngIf="userData.avatar" [src]="userData.avatar" />
+  </div>
+
+  <form [formGroup]="form" (ngSubmit)="onSubmit(form)" class="form">
+    <mat-form-field class="form-element">
+      <mat-label>ID</mat-label>
+      <input matInput formControlName="id" [disabled]="true" />
+    </mat-form-field>
+
+    <mat-form-field class="form-element">
+      <mat-label>First Name</mat-label>
+      <input matInput formControlName="first_name" />
+    </mat-form-field>
+
+    <mat-form-field class="form-element">
+      <mat-label>Last Name</mat-label>
+      <input matInput formControlName="last_name" />
+    </mat-form-field>
+
+    <mat-form-field class="form-element">
+      <mat-label>Username</mat-label>
+      <input matInput formControlName="username" />
+    </mat-form-field>
+
+    <mat-form-field class="form-element">
+      <mat-label>Emailt</mat-label>
+      <input matInput formControlName="email" />
+    </mat-form-field>
+
+    <mat-form-field class="form-element">
+      <mat-label>Password</mat-label>
+      <input type="password" matInput formControlName="password" />
+    </mat-form-field>
+
+    <mat-form-field class="form-element">
+      <mat-label>Gender</mat-label>
+      <input matInput formControlName="gender" />
+    </mat-form-field>
+
+    <button
+      mat-raised-button
+      color="primary"
+      type="submit"
+      class="button"
+      [class.disabled]="!form.valid"
+      [disabled]="!form.valid"
+    >
+      Submit
+    </button>
+  </form>
+</div>
